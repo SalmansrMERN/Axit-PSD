@@ -1,0 +1,1243 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+span {
+    display: block;
+}
+
+/* =================== Common CSS End ===================== */
+
+/* =================== Nav Part Start ====================== */
+#header_part {
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.head_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_logo {
+    flex-basis: 210px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.main_menu {
+    flex-basis: 900px;
+    line-height: 80px;
+
+}
+
+.main_menu ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.main_menu ul li {
+    padding: 0 23px;
+
+}
+
+.main_menu ul li a {
+    color: #fff;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.main_menu ul li a:hover {
+    color: #ff8b38;
+
+
+}
+
+.cool_link {
+    position: relative;
+
+}
+
+.cool_link::after {
+    content: '[';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff8b38;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.cool_link::before {
+    content: ']';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ff8b38;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+
+}
+
+.cool_link:hover::after {
+    opacity: 1;
+    left: -15px;
+}
+
+.cool_link:hover::before {
+    opacity: 1;
+    right: -15px;
+}
+
+.menu_fix {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    background: #000 !important;
+    border-bottom: 1px solid #ff9b51 !important;
+
+}
+
+/* =================== Nav Part End ====================== */
+
+/* =================== Banner Part Start ====================== */
+#banner_part {
+    padding: 140px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.banner_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner_text {
+    flex-basis: 560px;
+
+}
+
+.form_fill input {
+    display: block;
+}
+
+.banner_text h2 {
+    margin: 25px 0;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 273;
+    width: 487px;
+    line-height: 40px;
+}
+
+.banner_text p {
+    color: #fff;
+    font-size: 15px;
+    width: 300px;
+    line-height: 24px;
+    margin-bottom: 35px;
+
+
+}
+
+.banner_text button {
+    width: 135px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #fff;
+
+
+}
+
+.banner_text button a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.form_part {
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.form_title {
+    padding: 20px 50px;
+    background: #f5f5f5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.form_title h2 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.form_title h2 span {
+    color: #ff9b51;
+    display: inline-block;
+}
+
+.form_fill {
+    padding: 20px 50px;
+    background: #fff;
+
+
+}
+
+.form_fill input {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 100%;
+
+}
+
+.banner_btn {
+    padding: 16px 50px;
+    background: #ff9b51;
+    /* border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;*/
+
+}
+
+.banner_btn a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.form_title {
+    display: none;
+}
+
+.form_fill {
+    display: none;
+}
+
+.banner_btn {
+    display: none;
+}
+
+
+/* =================== Banner Part End ====================== */
+
+/* =================== Social Part Start ====================== */
+#social_part {
+    padding: 29px 0;
+    border-bottom: 2px solid gray;
+    box-shadow: 0 5px 5px gray;
+}
+
+.social_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social_text {
+    flex-basis: 35%;
+}
+
+.social_text h2 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+
+}
+
+.social_text p {
+    color: #86878b;
+}
+
+.social_menu {
+    display: flex;
+    flex-basis: 65%;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.social_menu i {
+    padding-left: 50px;
+    color: #cccccc;
+    font-size: 40px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.social_menu i:hover {
+    color: #ff9b51;
+}
+
+/* =================== Social Part End ====================== */
+
+/* =================== Effect Part Start ====================== */
+.effect_slider {
+    padding: 100px 0;
+    background: #f5f5f5;
+}
+
+.effect_item {
+    margin-left: 160px;
+}
+
+.effect_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.effect_text {
+    flex-basis: 50%;
+    margin-left: 200px;
+    display: inline-block;
+
+}
+
+.effect_text h3 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+.effect_text p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 453px;
+}
+
+.effect_text p span {
+    display: block;
+    margin: 15px 0 25px;
+
+}
+
+.effect_text a {
+    width: 118px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #ff9b51;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.effect_img {
+    display: flex;
+    flex-basis: 50%;
+    margin-top: 0;
+    justify-content: flex-end;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.effect_slider .slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.effect_slider .slick-dots li button {
+    color: red;
+    font-size: 0;
+    width: 95px;
+    height: 95px;
+    background: #333333;
+    border: 0;
+    /* margin-bottom: 5px; */
+    margin-left: 50px;
+    border-bottom: 2px solid #fff;
+
+}
+
+.effect_slider .slick-dots li.slick-active button {
+    background: #ff9b51;
+
+}
+
+/* =================== Effect Part End ====================== */
+
+/* =================== Sub List Part Start ====================== */
+#list_part {
+    padding: 90px 0;
+
+}
+
+.list_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_img {
+    flex-basis: 40%;
+    margin-right: 50px;
+}
+
+.list_img img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.list_news {
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+
+.list_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.list_title h2::after {
+    content: '';
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.list_title p {
+    margin: 40px 0;
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 393px;
+    line-height: 24px;
+}
+
+.list_item {
+    margin-top: 41px;
+    position: relative;
+    margin-left: 50px;
+}
+
+/* .list_item:hover{ 
+    background: red;
+}*/
+.list_item i {
+    color: #ff9b51;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.list_item i::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    top: -7px;
+    left: -7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid #ff9b51;
+}
+
+.list_item h3 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.list_item p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 341px;
+}
+
+.list_item:nth-child(2) p {
+    width: 360px;
+}
+
+/* =================== Sub List Part End ====================== */
+
+/* =================== Pic Section Part Start ====================== */
+#pic_part {
+    padding: 84px 0;
+    background: #f5f5f5;
+}
+
+.pic_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic_text {
+    flex-basis: 40%;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.pic_img img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.pic_title {
+    margin-bottom: 45px;
+}
+
+.pic_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pic_title h2::after {
+    content: '';
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.pic_text p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 453px;
+}
+
+.pic_text p span {
+    display: block;
+    margin: 15px 0 25px;
+
+}
+
+/* =================== Pic Section Part End ====================== */
+
+/* =================== Service Part Start ====================== */
+#service_part {
+    padding: 100px 0;
+}
+
+.service_title {
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+.service_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+
+}
+
+.service_title h2::after {
+    content: '';
+    bottom: -28px;
+    left: 524px;
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.service_title p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.service_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_col {
+    width: 32%;
+    margin-right: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.service_col:nth-child(3) {
+    margin-right: 0;
+
+}
+
+.service_col h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 15px 0;
+
+}
+
+.service_col i {
+    font-size: 25px;
+    color: #ff9b51;
+    position: absolute;
+    top: -53px;
+    left: 140px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #ff9b51;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.service_col p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 338px;
+}
+
+/* =================== Service Part End ====================== */
+
+/* =================== Design Part Start ====================== */
+
+.design_item img {
+    width: 100%;
+    height: 340px;
+
+}
+
+.design_slider {
+    position: relative;
+
+}
+
+.design_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    -webkit-transform: translate(-40%, -50%);
+    -moz-transform: translate(-40%, -50%);
+    -ms-transform: translate(-40%, -50%);
+    -o-transform: translate(-40%, -50%);
+    color: #fff;
+}
+
+.design_text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 60px;
+    position: relative;
+
+}
+
+.design_text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -27px;
+    left: 156px;
+    width: 55px;
+    height: 2px;
+    background: #fff;
+}
+
+.design_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin: 40px 0;
+    width: 661px;
+}
+
+.design_text a {
+    width: 135px;
+    height: 40px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 113px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.design_text a:hover {
+    background: #ff8b38;
+    border: 2px dotted #fff;
+}
+
+.design_slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 13px;
+    display: flex;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.design_slider .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #ff8b38;
+    border: 0;
+    margin-right: 5px;
+    border: 2px solid #000;
+}
+
+.design_slider .slick-dots li.slick-active button {
+    background: #fff;
+}
+
+.nxt_arw {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    color: #ff8b38;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.prv_arw {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    color: #ff8b38;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* =================== Design Part End ====================== */
+
+/* =================== Pricing Card Part Start ====================== */
+#card_part {
+    padding: 99px 0;
+    background: #f5f5f5;
+}
+
+.card_title {
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+.card_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+
+}
+
+.card_title h2::after {
+    content: '';
+    bottom: -28px;
+    left: 524px;
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.card_title p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.card_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_col {
+    width: 31%;
+    margin-right: 36px;
+    text-align: center;
+    position: relative;
+    transition: all linear 0.3S;
+    -webkit-transition: all linear 0.3S;
+    -moz-transition: all linear 0.3S;
+    -ms-transition: all linear 0.3S;
+    -o-transition: all linear 0.3S;
+}
+
+.card_col:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: -2px 2px 5px gray;
+}
+
+.card_col:nth-child(3) {
+    margin-right: 0;
+
+}
+
+.card_col h3 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    background: #333333;
+    padding: 13px 0;
+    border-bottom: 2px solid #fff;
+
+}
+
+.card_col h4 {
+    padding: 20px 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    background: #333333;
+    margin-left: 0;
+
+}
+
+.card_col h4 span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.card_col h5 {
+    background: #333333;
+    color: #adadad;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #ff8b38;
+
+
+}
+
+.card_hide {
+    padding: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    background: #ff8b38;
+    /* background: blue; */
+    display: none;
+
+
+}
+
+.card_col p span {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #f5f5f5;
+
+}
+
+/* =================== Pricing Card Part End ====================== */
+
+/* =================== Test Part Start ====================== */
+#test_part {
+    padding: 90px 0;
+    position: relative;
+
+}
+
+.test_title {
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+.test_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+
+}
+
+.test_title h2::after {
+    content: '';
+    bottom: -28px;
+    left: 524px;
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.test_title p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.test_item p {
+    width: 266px;
+    line-height: 24px;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+}
+
+.test_item p::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background: #f5f5f5;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    z-index: -1;
+}
+
+.test_slider {
+    margin-left: 340px;
+}
+
+.test_item img {
+    margin-top: 24px;
+    display: inline-block;
+}
+
+.test_img {
+    position: relative;
+}
+
+.img_text {
+    display: inline-block;
+    position: absolute;
+    bottom: 17px;
+    left: 78px;
+}
+
+.img_text h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+
+}
+
+.img_text h4 {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+/* =================== Nav Part End ====================== */
+
+/* =================== Contact Us Part Start ====================== */
+#contact_part {
+    padding: 90px 0;
+    position: relative;
+}
+
+.contact_title {
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+.contact_title h2 {
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+
+}
+
+.contact_title h2::after {
+    content: '';
+    bottom: -28px;
+    left: 524px;
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    background: #ff9b51;
+}
+
+.contact_title p {
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contact_form input {
+    border: 0;
+    background: transparent;
+}
+
+.contact_info {
+    flex-basis: 40%;
+    margin-right: 50px;
+}
+
+.contact_info input {
+    display: block;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+
+}
+
+.contact_msg {
+    flex-basis: 50%;
+}
+
+.contact_msg input {
+    padding-bottom: 145px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.contact_form button {
+    width: 148px;
+    height: 48px;
+    border-radius: 5px;
+    background: #000;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    border: 4px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: -2px 2px 3px gray;
+    margin-left: 398px;
+    margin-top: 94px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.contact_form button:hover {
+    /* background: #ff9b51; */
+    color: #fff;
+    font-weight: 700;
+    border: 4px solid #ff9b51;
+
+}
+
+/* =================== Contact Us Part End ====================== */
+
+/* =================== Footer Part Start ====================== */
+#footer_part {
+    padding: 20px 0;
+    background: #000;
+}
+
+.footer_social {
+    margin-left: 278px;
+}
+
+.footer_social i {
+    padding-left: 33px;
+    color: #cccccc;
+    font-size: 20px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-bottom: 15px;
+}
+
+.footer_social i:hover {
+    color: #ff9b51;
+}
+
+.footer_social h5 {
+    color: #cccccc;
+    font-size: 13px;
+    margin-left: 143px;
+}
+
+/* =================== Footer Part End ====================== */
